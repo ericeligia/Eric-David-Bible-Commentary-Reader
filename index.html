@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta harset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eric David Bible Commentary Reader — Side by Side</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Eric David Bible Commentary Reader<span>side by side</span></h1>
+    <p class="tagline">One verse, every commentator, at a glance. Public-domain texts via GetBible.</p>
+    <form id="verse-form" class="verse-form" autocomplete="off">
+      <label for="ref" class="sr-only">Verse reference</label>
+      <input id="ref" name="ref" type="text" placeholder="John 3:16" value="John 3:16" required />
+      <button type="submit" id="submit-btn">Show commentary</button>
+    </form>
+    <details class="picker" open>
+      <summary>Commentators <span id="selected-count"></span></summary>
+      <div class="picker-actions">
+        <button type="button" id="select-all" class="link-btn">All</button>
+        <button type="button" id="select-none" class="link-btn">None</button>
+      </div>
+      <div id="commentator-list" class="commentator-list"></div>
+    </details>
+  </header>
+
+  <main>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <h2 id="ref-title" class="ref-title" hidden></h2>
+    <section id="tensions" class="tensions" aria-label="Theological tensions" hidden></section>
+    <section id="panels" class="panels" aria-label="Commentary panels"></section>
+  </main>
+
+  <footer class="site-footer">
+    Source: <a href="https://commentaries.getbible.net/" target="_blank" rel="noopener">GetBible Commentaries API</a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

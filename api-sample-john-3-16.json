@@ -1,0 +1,368 @@
+{
+  "verse": "John 3:16",
+  "book": 43,
+  "chapter": 3,
+  "verse_num": 16,
+  "wanted_mapping": {
+    "Matthew Henry": [
+      "mhc",
+      "mhcc"
+    ],
+    "John Gill": [],
+    "Adam Clarke": [
+      "clarke"
+    ],
+    "Spurgeon": [
+      "tdavid"
+    ],
+    "JFB": [
+      "jfb"
+    ],
+    "Barnes": [
+      "barnes"
+    ],
+    "Wesley": [
+      "wesley"
+    ],
+    "Geneva": [],
+    "Keil-Delitzsch": [
+      "kd"
+    ],
+    "Vincent": []
+  },
+  "catalog_ids": [
+    "abbott",
+    "barnes",
+    "burkitt",
+    "calvincommentaries",
+    "catena",
+    "clarke",
+    "dtn",
+    "dutkant",
+    "freaug",
+    "frechry",
+    "frejer",
+    "jfb",
+    "kd",
+    "lightfoot",
+    "luther",
+    "mak",
+    "mhc",
+    "mhcc",
+    "pnt",
+    "quotingpassages",
+    "rieger",
+    "scofield",
+    "sentiment",
+    "spurious",
+    "tdavid",
+    "tfg",
+    "tsk",
+    "varapp",
+    "vulgglossa",
+    "wesley"
+  ],
+  "url_templates": {
+    "schema": "getbible-commentaries-catalog-v1",
+    "base_url": "https://commentaries.getbible.net/v1/",
+    "metadata_url_template": "{commentary}/metadata.json",
+    "books_url_template": "{commentary}/books.json",
+    "commentary_url_template": "{commentary}.json",
+    "book_url_template": "{commentary}/{book}.json",
+    "chapter_url_template": "{commentary}/{book}/{chapter}.json"
+  },
+  "samples": {
+    "mhc": {
+      "ok": true,
+      "url": "https://commentaries.getbible.net/v1/mhc/43/3.json",
+      "top_keys": [
+        "schema",
+        "commentary",
+        "language",
+        "book",
+        "name",
+        "chapter",
+        "entries"
+      ],
+      "entry_count": 3,
+      "has_v16": true,
+      "entry_keys": [
+        "book",
+        "chapter",
+        "verse",
+        "verses",
+        "osis",
+        "text",
+        "references"
+      ],
+      "text_preview": "Christ's Interview with Nicodemus.\n\n* 1 * There was a man of the Pharisees, named Nicodemus, a ruler of the Jews: * 2 * The same came to Jesus by night, and said unto him, Rabbi, we know that thou art a teacher come from God: for no man can do these miracles that thou doest, except God be with him. * 3 * Jesus answered and said unto him, Verily, verily, I say unto thee, Except a man be born again,…"
+    },
+    "mhcc": {
+      "ok": true,
+      "url": "https://commentaries.getbible.net/v1/mhcc/43/3.json",
+      "top_keys": [
+        "schema",
+        "commentary",
+        "language",
+        "book",
+        "name",
+        "chapter",
+        "entries"
+      ],
+      "entry_count": 2,
+      "has_v16": false,
+      "entry_keys": null,
+      "text_preview": ""
+    },
+    "clarke": {
+      "ok": true,
+      "url": "https://commentaries.getbible.net/v1/clarke/43/3.json",
+      "top_keys": [
+        "schema",
+        "commentary",
+        "language",
+        "book",
+        "name",
+        "chapter",
+        "entries"
+      ],
+      "entry_count": 33,
+      "has_v16": true,
+      "entry_keys": [
+        "book",
+        "chapter",
+        "verse",
+        "osis",
+        "text",
+        "references"
+      ],
+      "text_preview": "* Verse 16 *\n\nFor God so loved the world - Such a love as that which induced God to give his only begotten son to die for the world could not be described: Jesus Christ does not attempt it. He has put an eternity of meaning in the particle οὑτω, so, and left a subject for everlasting contemplation, wonder, and praise, to angels and to men. The same evangelist uses a similar mode of expression, 1Jn…"
+    },
+    "tdavid": {
+      "ok": false,
+      "url": "https://commentaries.getbible.net/v1/tdavid/43/3.json",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "jfb": {
+      "ok": true,
+      "url": "https://commentaries.getbible.net/v1/jfb/43/3.json",
+      "top_keys": [
+        "schema",
+        "commentary",
+        "language",
+        "book",
+        "name",
+        "chapter",
+        "entries"
+      ],
+      "entry_count": 14,
+      "has_v16": true,
+      "entry_keys": [
+        "book",
+        "chapter",
+        "verse",
+        "verses",
+        "osis",
+        "text",
+        "references"
+      ],
+      "text_preview": "* 14-16. And as Moses, &c.-- *Here now we have the \"heavenly things,\" as before the \"earthly,\" but under a veil, for the reason mentioned in Joh 3:12. The crucifixion of Messiah is twice after this veiled under the same lively term--\"uplifting,\" Joh 8:28; 12:32, 33. Here it is still further veiled--though to us who know what it means, rendered vastly more instructive--by reference to the brazen se…"
+    },
+    "barnes": {
+      "ok": true,
+      "url": "https://commentaries.getbible.net/v1/barnes/43/3.json",
+      "top_keys": [
+        "schema",
+        "commentary",
+        "language",
+        "book",
+        "name",
+        "chapter",
+        "entries"
+      ],
+      "entry_count": 36,
+      "has_v16": true,
+      "entry_keys": [
+        "book",
+        "chapter",
+        "verse",
+        "osis",
+        "text",
+        "references"
+      ],
+      "text_preview": "Verse 16. For God so loved. This does not mean that God approved the conduct of men, but that he had benevolent feelings toward them, or was earnestly desirous of their happiness. God hates wickedness, but he still desires the happiness of those who are sinful. He hates the sin, but loves the sinner. A parent may love his child and desire his welfare, and yet be strongly opposed to the conduct of …"
+    },
+    "wesley": {
+      "ok": true,
+      "url": "https://commentaries.getbible.net/v1/wesley/43/3.json",
+      "top_keys": [
+        "schema",
+        "commentary",
+        "language",
+        "book",
+        "name",
+        "chapter",
+        "entries"
+      ],
+      "entry_count": 29,
+      "has_v16": true,
+      "entry_keys": [
+        "book",
+        "chapter",
+        "verse",
+        "osis",
+        "text",
+        "references"
+      ],
+      "text_preview": "Yea, and this was the very design of God's love in sending him into the world. Whosoever believeth on him - With that faith which worketh by love, and hold fast the beginning of his confidence steadfast to the end. God so loved the world - That is, all men under heaven; even those that despise his love, and will for that cause finally perish. Otherwise not to believe would be no sin to them. For w…"
+    },
+    "kd": {
+      "ok": false,
+      "url": "https://commentaries.getbible.net/v1/kd/43/3.json",
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  "refined_findings_2026_11_01": {
+    "backend_response_john_3_16": [
+      {
+        "key": "matthew-henry",
+        "id": "mhc",
+        "name": "Matthew Henry",
+        "note": "Complete commentary (mhc); concise (mhcc) used as fallback",
+        "status": "ok",
+        "verses": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "osis": "John.3.1",
+        "source_url": "https://commentaries.getbible.net/v1/mhc/43/3.json",
+        "text_chars": 60172
+      },
+      {
+        "key": "john-gill",
+        "id": null,
+        "name": "John Gill",
+        "note": "Not in GetBible Commentaries API",
+        "status": "unavailable",
+        "reason": "Not in GetBible Commentaries API",
+        "text_chars": 0
+      },
+      {
+        "key": "adam-clarke",
+        "id": "clarke",
+        "name": "Adam Clarke",
+        "note": null,
+        "status": "ok",
+        "verses": [
+          16
+        ],
+        "osis": "John.3.16",
+        "source_url": "https://commentaries.getbible.net/v1/clarke/43/3.json",
+        "text_chars": 2310
+      },
+      {
+        "key": "spurgeon",
+        "id": "tdavid",
+        "name": "Spurgeon",
+        "note": "Treasury of David — Psalms only",
+        "status": "not_covered",
+        "reason": "Spurgeon's Treasury of David covers Psalms only",
+        "text_chars": 0
+      },
+      {
+        "key": "jfb",
+        "id": "jfb",
+        "name": "JFB",
+        "note": "Jamieson, Fausset & Brown",
+        "status": "ok",
+        "verses": [
+          14,
+          15,
+          16
+        ],
+        "osis": "John.3.14",
+        "source_url": "https://commentaries.getbible.net/v1/jfb/43/3.json",
+        "text_chars": 3383
+      },
+      {
+        "key": "barnes",
+        "id": "barnes",
+        "name": "Barnes",
+        "note": null,
+        "status": "ok",
+        "verses": [
+          16
+        ],
+        "osis": "John.3.16",
+        "source_url": "https://commentaries.getbible.net/v1/barnes/43/3.json",
+        "text_chars": 2093
+      },
+      {
+        "key": "wesley",
+        "id": "wesley",
+        "name": "Wesley",
+        "note": null,
+        "status": "ok",
+        "verses": [
+          16
+        ],
+        "osis": "John.3.16",
+        "source_url": "https://commentaries.getbible.net/v1/wesley/43/3.json",
+        "text_chars": 613
+      },
+      {
+        "key": "geneva",
+        "id": null,
+        "name": "Geneva",
+        "note": "Not in GetBible Commentaries API",
+        "status": "unavailable",
+        "reason": "Not in GetBible Commentaries API",
+        "text_chars": 0
+      },
+      {
+        "key": "keil-delitzsch",
+        "id": "kd",
+        "name": "Keil-Delitzsch",
+        "note": "Old Testament only",
+        "status": "not_covered",
+        "reason": "Keil-Delitzsch covers the Old Testament only",
+        "text_chars": 0
+      },
+      {
+        "key": "vincent",
+        "id": null,
+        "name": "Vincent",
+        "note": "Not in GetBible Commentaries API",
+        "status": "unavailable",
+        "reason": "Not in GetBible Commentaries API",
+        "text_chars": 0
+      }
+    ],
+    "notes": [
+      "mhc entry covering John 3:16 is a range entry (verses 1-21, ~60k chars); mhcc has no entry containing v16",
+      "jfb entry for John 3:16 spans verses 14-16",
+      "tdavid (Spurgeon) is Psalms only; kd is OT only - backend short-circuits without fetching",
+      "barnes returns 404 for Genesis 1 and Psalms 23 (OT coverage incomplete); handled as not_covered",
+      "Psalms 23:1 and Genesis 1:1 tested: tdavid and kd return text there"
+    ]
+  }
+}

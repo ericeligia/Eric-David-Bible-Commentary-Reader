@@ -1,0 +1,9 @@
+{
+  "schema": "getbible-commentary-chapter-v1",
+  "commentary": "mhcc",
+  "language": "en",
+  "book": 43,
+  "name": "John",
+  "chapter": 3,
+  "entries_for_v16": []
+}

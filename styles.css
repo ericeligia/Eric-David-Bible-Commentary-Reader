@@ -1,0 +1,74 @@
+:root {
+  --bg: #f7f4ee; --card: #fff; --ink: #2a2620; --muted: #776e62;
+  --accent: #7a3b1d; --border: #e3dccf; --ok: #2f6b3a; --warn: #9a6a00; --err: #a12c2c;
+  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.site-header { padding: 1.5rem clamp(1rem, 3vw, 2.5rem) 1rem; border-bottom: 1px solid var(--border); background: #fbf9f5; }
+h1 { margin: 0; font-family: var(--serif); font-size: 1.8rem; color: var(--accent); }
+h1 span { font-weight: normal; color: var(--muted); font-size: 1.1rem; }
+.tagline { margin: .25rem 0 1rem; color: var(--muted); }
+
+.verse-form { display: flex; gap: .5rem; max-width: 560px; }
+.verse-form input { flex: 1; padding: .65rem .8rem; font-size: 1.05rem; border: 1px solid var(--border); border-radius: 8px; }
+.verse-form input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.verse-form button { padding: .65rem 1.1rem; font-size: 1rem; border: 0; border-radius: 8px; background: var(--accent); color: #fff; cursor: pointer; }
+.verse-form button:disabled { opacity: .6; cursor: progress; }
+
+.picker { margin-top: .9rem; }
+.picker summary { cursor: pointer; color: var(--muted); font-size: .95rem; }
+.picker-actions { margin: .4rem 0; }
+.link-btn { background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0 .4rem 0 0; text-decoration: underline; }
+.commentator-list { display: flex; flex-wrap: wrap; gap: .35rem .9rem; }
+.commentator-list label { display: inline-flex; align-items: center; gap: .3rem; font-size: .92rem; white-space: nowrap; }
+.commentator-list label.unavailable { color: var(--muted); }
+
+main { padding: 1rem clamp(1rem, 3vw, 2.5rem) 2rem; }
+.status { min-height: 1.4rem; color: var(--muted); }
+.status.error { color: var(--err); font-weight: 600; }
+.ref-title { font-family: var(--serif); margin: .25rem 0 1rem; }
+
+/* Side-by-side panels: as many columns as fit, stacking on narrow screens. */
+.panels { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); align-items: stretch; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; display: flex; flex-direction: column; min-height: 220px; max-height: 70vh; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+.card header { padding: .7rem .9rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.card h3 { margin: 0; font-family: var(--serif); font-size: 1.1rem; color: var(--accent); }
+.card .meta { font-size: .75rem; color: var(--muted); text-align: right; }
+.card .body { padding: .8rem .9rem 1rem; overflow-y: auto; font-family: var(--serif); line-height: 1.55; font-size: .98rem; white-space: pre-wrap; }
+.card.ok .badge { color: var(--ok); }
+.card.unavailable, .card.not_covered { background: #faf8f4; }
+.card.unavailable .body, .card.not_covered .body { font-family: var(--sans); color: var(--muted); font-style: italic; white-space: normal; }
+.card.error .body { color: var(--err); font-family: var(--sans); white-space: normal; }
+.badge { font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--warn); }
+
+.card.loading .body { color: var(--muted); }
+.skeleton { height: .8rem; border-radius: 4px; margin: .5rem 0; background: linear-gradient(90deg, #eee 25%, #f6f6f6 50%, #eee 75%); background-size: 200% 100%; animation: shimmer 1.2s infinite; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+.site-footer { padding: 1rem clamp(1rem, 3vw, 2.5rem); color: var(--muted); font-size: .85rem; }
+.site-footer a { color: var(--accent); }
+@media (max-width: 520px) { .verse-form { flex-direction: column; } .card { max-height: none; } }
+
+/* --- Tradition tags (light, colour-coded by camp) --- */
+.title-box { display: flex; flex-direction: column; gap: .25rem; min-width: 0; }
+.trad-tag { align-self: flex-start; font-family: var(--sans); font-size: .72rem; line-height: 1.2; padding: .12rem .45rem; border-radius: 999px; border: 1px solid; cursor: help; }
+.camp-high-calvinist     { color: #6b1f2a; background: #f8e9eb; border-color: #e6c3c8; }
+.camp-calvinist          { color: #7a2f3d; background: #fbf0f1; border-color: #ecd0d5; }
+.camp-moderate-calvinist { color: #7a4a24; background: #f9f0e6; border-color: #ead8c2; }
+.camp-arminian           { color: #1f4f6b; background: #e9f2f8; border-color: #c4d9e6; }
+.camp-lutheran           { color: #3d5a2a; background: #edf4e8; border-color: #cfe0c3; }
+.camp-moderate           { color: #5b5750; background: #f1efeb; border-color: #dcd7cf; }
+
+/* --- Tension callouts --- */
+.tensions { display: flex; flex-direction: column; gap: .4rem; margin: 0 0 1rem; }
+.tension { font-size: .9rem; padding: .45rem .75rem; border-left: 3px solid #b0563a; background: #fdf3ee; border-radius: 0 6px 6px 0; }
+.tension.moderate { border-left-color: #8a7a3a; background: #faf6ea; }
+.tension.soft { border-left-color: #a59a8c; background: #f6f3ee; }
+.tension strong { font-weight: 600; color: var(--ink); }
+.card.in-tension { border-top: 3px solid #d9a58f; }
+.card.highlight { outline: 2px solid #b0563a; outline-offset: 2px; }
