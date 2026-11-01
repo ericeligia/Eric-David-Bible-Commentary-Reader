@@ -325,4 +325,5 @@ FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
 if FRONTEND_DIR.is_dir():
     app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
     from fastapi.staticfiles import StaticFiles
-    app.mount("/", StaticFiles(directory="./frontend", html=True), name="frontend")
+   app.mount("/", StaticFiles(directory=".", html=True), name="frontend")
+    
