@@ -327,4 +327,4 @@ if FRONTEND_DIR.is_dir():
     from fastapi.staticfiles import StaticFiles
 @app.get("/")
 async def root():
-return FileResponse("index.html")   
+ return FileResponse("index.html")
