@@ -323,8 +323,10 @@ async def verse(
 # Mounted last so /api/* and /health take precedence.
 FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
 if FRONTEND_DIR.is_dir():
-    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
-    from fastapi.staticfiles import StaticFiles
-@app.get("/")
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+app.mount("/", StaticFiles(directory=".", html=True), name="frontend")
+@app.get("/"):
 async def root():
- return FileResponse("index.html")
+    return FileResponse("index.html")
+
